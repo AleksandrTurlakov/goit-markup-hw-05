@@ -119,6 +119,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    transition: color 250ms var(--cubic);
 }
 
 .header-link::after {
@@ -146,7 +147,6 @@ img {
     display: flex;
     align-items: center;
     color: var(--secondary-text-color);
-    transition: color 250ms var(--cubic);
 }
 
 .header-link:hover,
@@ -418,7 +418,11 @@ img {
     height: 100%;
     border-radius: 50%;
     fill: #afb1b8;
-    transition: background-color 250ms var(--cubic), fill 250ms var(--cubic);
+    transition: background-color 250ms var(--cubic);
+}
+
+.icon-soc {
+    transition: fill 250ms var(--cubic);
 }
 
 .team-link-soc:hover,
@@ -573,7 +577,7 @@ img {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     fill: var(--secondary-background-color);
-    transition: background 250ms var(--cubic), fill 250ms var(--cubic);
+    transition: background 250ms var(--cubic);
 }
 
 .social-link:hover,
@@ -611,7 +615,7 @@ img {
     cursor: pointer;
     color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
-    transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+    transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 
 .filter-btn:hover,
@@ -654,6 +658,7 @@ img {
 
 .project-link {
     display: inline-block;
+    transition: box-shadow 250ms var(--cubic);
 }
 
 .project-link:hover,
@@ -662,7 +667,7 @@ img {
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-item:hover .project-group-text {
+.project-link:hover .project-group-text {
     transform: translateY(0);
 }
 
